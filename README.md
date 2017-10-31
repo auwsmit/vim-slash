@@ -2,7 +2,7 @@
 ------
 
 This is a fork of junegunn's vim-slash, but I removed the features involving
-search highlighting.
+search highlighting and blinking.
 
 * Why remove auto-clear search hl? Because I use [vim-cool](https://github.com/romainl/vim-cool)
 for that.
