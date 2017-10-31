@@ -1,3 +1,27 @@
+!FORK!
+------
+
+This is a fork of junegunn's vim-slash, but I removed the features involving
+search highlighting. Why? Because I use [vim-cool](https://github.com/romainl/vim-cool)
+for that functionality.
+
+Why keep vim-slash in this lesser state? Because I like the improved * search,
+and I use `<plug>(slash-after)` with [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
+to show number of search results (e.g. 123 of 456).
+
+Here's the snippet I'm using, if anyone wants to try it out:
+
+```vim
+Plug 'auwsmit/vim-slash' | Plug 'henrik/vim-indexed-search' " {{{
+" no mappings
+let g:indexed_search_mappings = 0
+" vim-slash and indexed-search: UNITE!!!
+noremap <silent> <plug>(slash-after) :<c-u>ShowSearchIndex<cr>
+xunmap <plug>(slash-after)
+```
+
+-----
+
 vim-slash
 =========
 
