@@ -7,17 +7,8 @@ search highlighting and blinking.
 * Why remove auto-clear search hl? Because I use [vim-cool](https://github.com/romainl/vim-cool)
 for that.
 
-* Why keep vim-slash like this at all? Because I like the improved star-search,
-and I use `<plug>(slash-after)` with [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
-to show number of search results (e.g. 123 of 456):
-
-```vim
-" vim-slash + vim-indexed-search
-Plug 'auwsmit/vim-slash' | Plug 'henrik/vim-indexed-search'
-let g:indexed_search_mappings = 0
-noremap <silent> <plug>(slash-after) :<c-u>ShowSearchIndex<cr>
-xunmap <plug>(slash-after)
-```
+* Why keep vim-slash like this at all? Because I like the stay-in-place star-search,
+and I use `<plug>(slash-after)` to neatly center my search results)
 
 -----
 
